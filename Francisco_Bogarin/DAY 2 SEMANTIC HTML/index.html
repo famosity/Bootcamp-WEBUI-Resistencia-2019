@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+   <title>Register Form Globant</title>
+</head>
+<body>
+<header></header>
+<div class="container">
+    <form action="./process.html">
+        <h2>Create An Account</h2>
+        <h4>Personal Info</h4>
+        <label>First Name:</label><br><input type="text" name="fname" maxlength="40" required><em>Required</em><br>
+        <label>Last Name:</label><br><input type="text" name="lname" maxlength="40" required><em>Required</em><br>
+        <label>Email:</label><br><input type="text" name="email" maxlength="40" required><em>Required</em><br><br>
+        <strong>Birthay</strong><br><br>
+        <input type="date" name="birthay" id="birthay" style="text-align: right">
+        <br><br>
+        <fieldset style="border: none"></fieldset>
+        <label for=""><strong>Gender:</strong><br><br></label>
+            <img src="./src/assets/img/male.ico" alt="maleIcon" width="15px" height="15px"> Male <input type="radio" name="genderOption" value="male">
+            <img src="./src/assets/img/femaleico.png" alt="femaleIcon" width="15px" height="15px">Female <input type="radio" name="genderOption" value="female">
+            <img src="./src/assets/img/not specified.png" alt="notSpecifiedIcon" width="15px" height="15px">No specified <input type="radio" name="genderOption" value="noSpecified"><br><br>    
+        </fieldset>
+        <h4>Account Info</h4>
+        Username <br><input type="text" name="Username" maxlength="16" required><em>Required</em><br>
+        Password <br><input type="password" name="psw" maxlength="32" required><em>Required</em><br><br>
+        <input type="submit" value="sign up">
+        <input type="reset" value="reset">
+    </form>
+</div>
+</body>
+</html>
