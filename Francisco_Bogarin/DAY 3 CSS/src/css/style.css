@@ -6,14 +6,13 @@
     color: white
 }
 .magazine-container{
-width: 464px;
-height: 656px;
-background-image: url('../img/fondo.jpg');
-position: relative
+    width: 464px;
+    height: 656px;
+    background-image: url('../img/fondo.jpg');
+    position: relative
 }
-
 .date {
-float: left;    
+    float: left;    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     text-align: center;
@@ -23,7 +22,6 @@ float: left;
     background-image: linear-gradient(to left,rgba(81, 143, 236, 0),rgba(81, 143, 236, 1));
     color: white;
 }
-
 .website{
     float: right;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -35,7 +33,6 @@ float: left;
     background-image: linear-gradient(to right,rgba(81, 143, 236, 0),rgba(81, 143, 236, 1));
     color: black;
 }
-
 .magazine-name{
     float: inherit;
     text-align: center;
@@ -45,21 +42,18 @@ float: left;
     font-size: 140px;
     font-family: 'Vibe';
 }
-
 .main-tittle{
     position: absolute;
     text-align: center;
     top: 140px;
     left: 15%;
 }
-
 .main-tittle p{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
-font-weight: 700;
-margin-bottom: -40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: -40px;
 }
-
 .main-tittle span{
     font-size: 110px;
     font-family: Arial;
@@ -67,7 +61,6 @@ margin-bottom: -40px;
     color: rgba(255, 255, 0, 0.918);
     text-shadow: 2px 2px black;
 }
-
 .bot-left-text{
     position: absolute;
     bottom: 7%;
@@ -80,7 +73,6 @@ margin-bottom: -40px;
     font-weight: 700;
     padding-left:10px;
 }
-
 .bot-right-text{
     position: absolute;
     top: 46%;
@@ -94,7 +86,6 @@ margin-bottom: -40px;
     padding-right: 20px;
     
 }
-
 .white-font{
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
@@ -106,13 +97,11 @@ margin-bottom: -40px;
     font-size: 20px;
     font-weight: 700;
 }
-
 .bigger-special-font{
     font-size: 40px;
     font-weight: 900;
 
 }
-
 footer{
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
