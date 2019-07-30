@@ -1,0 +1,226 @@
+body{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    text-align: center;
+    width: 1000px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white
+}
+.Header-Box{
+    background-color: yellow;
+}
+section{
+    background-color: blue; 
+ 
+}
+.Nav{
+    background-color: orange;
+    margin-top: 10px;
+    margin-right: 5px;
+    align-self: flex-start;
+}
+.First-Box{
+    width:270px;
+    margin-top: 10px;
+    margin-right: 5px;
+    align-self: flex-start;
+}
+.Second-Box{
+    width:250px;
+    margin-top: 10px;
+    margin-right: 5px;
+    align-self: flex-start;
+}
+.Third-Box{
+    width:250px;
+    margin-top: 10px;
+    margin-right: 5px;
+    align-self: flex-start;
+}
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 10px
+}
+@media only screen and (min-width: 25px){
+    header{
+        text-align: left
+    }
+    header h4{
+        display:none
+    }
+    nav{
+        width: 100%;
+        text-align: left;
+    }
+    nav dl{
+        display:none
+    }
+    body{
+        width: 100%;
+    }
+    .control-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+        width:100%;
+    }
+    .First-Box{
+        margin-top: 5px;
+        width:100%;       
+    }
+    .First-Box img{
+        width: 100%
+    }
+    .Second-Box{
+        margin-top: 5px;
+        width:100%;
+    }
+    .Third-Box{
+        margin-top: 2px;
+        width:100%;
+    }
+}
+@media only screen and (min-width: 400px){
+    header{
+        text-align: left
+    }
+    header h4{
+        display:none
+    }
+    nav{
+        width: 100%;
+        text-align: left;
+    }
+    nav dl{
+        display:none
+    }
+    body{
+        width: 100%;
+    }
+    .control-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+        width:100%;
+    }
+    .First-Box{
+        margin-top: 5px;
+        width:100%;       
+    }
+    .Second-Box{
+        margin-top: 5px;
+        width:100%;
+    }
+    .Third-Box{
+        margin-top: 2px;
+        width:100%;
+    }
+}
+@media only screen and (min-width: 600px){
+    .select-form{
+        display: initial;
+    }
+    header{
+        text-align: left
+    }
+    header h4{
+    display: block
+    }
+    nav{
+        width: 100%;
+    }
+    body{
+        width: 100%;
+    }
+    .control-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+        width:100%;
+    }
+    .First-Box{
+        margin-top: 5px;
+        width:100%;       
+    }
+    section .First-Box img{
+        width:-1em;       
+    }
+    .Second-Box{
+        margin-top: 5px;
+        width:100%;
+    }
+    .Third-Box{
+        margin-top: 2px;
+        width:100%;
+    }
+
+}
+@media only screen and (min-width: 935px){
+    select{
+        display: none
+    }
+    header{
+        text-align: center
+    }
+    body{
+        width: 734px;
+    }
+    .control-container{
+        display: flex;
+        flex-direction: column;
+        width: 245px;
+    }
+    main{
+        flex-direction: row
+    }
+    nav{
+        width: 200px
+    }
+    nav dl{
+        display:block
+    }
+    .First-Box{
+        width:270px;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    .Second-Box{
+        width:250px;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    .Third-Box{
+        width:250px;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+}
+@media only screen and (min-width: 1366px){
+    body{
+        width: 1000px;
+    }
+    .control-container{
+        width: 512px;
+        display: flex;
+        flex-direction: row;
+    }
+}
