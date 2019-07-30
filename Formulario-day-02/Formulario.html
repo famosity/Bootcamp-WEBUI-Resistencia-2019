@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Creando un Formulario</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <body style="background-color:lavenderblush">
+        <!--encabezado-->
+        <header style="background-color:#64cc33; padding-top:0;" class="header">
+            <div class="container">
+                <h1 align="center" style="color:white; font-size: 70px;">Mi Formulario</h1>
+            </div>
+        </header>
+        <!--/encabezado-->
+        <!--cuerpo-->
+        <section style="background-color: lavenderblush; high:900px; size=5">
+            <div class="container">
+                <!--Aparte-->
+                <aside>
+                    <div style="background-color:#64cc33; width:230px"> 
+                        <h5 style="color: white">FORMULARIO DE PRUEBA <br>
+                          GLOBANT BOOTCAMP 2019 <br>  REACT.JS </h5>    
+                    </div>
+                </aside>
+                <!--/Aparte-->
+                <!--formulario-->
+                <article align="center">
+                        <h1><u><strong>COMPLETAR LOS CAMPOS OBLIGATORIOS</strong></u> </h1>
+                        <form action>
+                                <p>Nombre: <input type="text" name="fullname" size="50" required></p>
+                                <p>Apellido: <input type="text" name="lastname" size="50" required> </p>
+                                <p>Fecha de Nacimiento: <input type="number" name="nacido" min="1900" size="50"></p>
+                                <p>Telefono: <input type="Tel" name="Telephone" size="30"> </p>
+                                <p>Correo Electronico: <input type="email" name="Correo" size="45" required> </p>
+                                <textarea name="comentarios" rows="10" cols="60">    MENSAJE    </textarea>
+                                <p>Sexo:
+                                  <input type="radio" name="hm" value="h" > Hombre
+                                  <input type="radio" name="hm" value="m"> Mujer
+                                </p>
+                                <p>
+                                  <input type="submit" value="Enviar" style="background-color:cadetblue; color:white;">
+                                  <input type="reset" value="Borrar" style="background-color:coral; color: white">
+                                </p>
+                        </form> 
+                </article>
+                <!--/formulario-->
+            </div>
+        </section>
+        <!--Cuerpo-->
+        <!--pie de pagina-->
+        <footer style="background-color:#64cc33">
+            <div class="container">
+                <div style="position:absolute;right:450px; ">
+                    <h1 style="color: white">
+                        Quieres ser un futuro globers?
+                        <br> Contactanos <br>
+                        aksnklnsklxklakka@Globant.com <br>
+                        tel:3624-098787.
+                    </h1>
+                </div>
+                <div>
+                    <div>
+                        <h2 style="color: white" >Globant pensando en vos </h2>
+                        <figure>
+                            <img src="image/images.png"  height="200" width="300">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Pie de pagina-->
+    </body>
+</html>
