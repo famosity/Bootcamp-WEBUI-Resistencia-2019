@@ -1,0 +1,57 @@
+.body{
+
+}
+.contenedor{
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 400px;
+	border: solid 4px black;
+	padding: 5px;
+
+}
+.display{
+	width: 90%;
+	height: 100px;
+	border: solid 2px #444444;
+	background-color: #338833;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.keyboard{
+	width: 90%;
+	height: 200px;
+	border: solid 2px #444444;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	padding: 5px;
+
+
+}
+.num{
+	width: 31%;
+	float: left;
+	text-align: center;
+	border: solid 2px grey;
+	margin: 1px;
+}
+
+.zero{
+	width: 96%;
+
+}
+
+.divider{
+	clear: both;
+	height: 4px;
+}
+.operator{
+	width: 40%;
+	float: left;
+	text-align: center;
+	border: solid 2px grey;
+	margin: 1px;
+}	
+}
