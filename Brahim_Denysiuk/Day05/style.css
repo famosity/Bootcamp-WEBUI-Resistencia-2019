@@ -36,6 +36,7 @@
 	font-size: 60px;
 	color: #42C920;
 }
+
 .keyboard{
 	width: 390px;
 	
@@ -49,13 +50,13 @@
 .boton{
 	border-radius: 5px;
 	background-color: grey;
+	border: solid 2px #909090;
 	font-size: 20px;
 }
 .num{
 	width: 120px;
 	float: left;
 	text-align: center;
-	border: solid 2px grey;
 	margin: 5px;
 }
 
@@ -72,7 +73,7 @@
 	width: 185px;
 	float: left;
 	text-align: center;
-	border: solid 2px grey;
+	
 	margin: 5px;
 }	
 }

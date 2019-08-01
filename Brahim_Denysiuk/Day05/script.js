@@ -1,6 +1,7 @@
 var variableA;
 var variableB;
 var operacion;
+var finalizado;
 
 function init(){
 	//alert("prueba")
@@ -22,62 +23,116 @@ function init(){
 	var multi  = document.getElementById("multi");
 	var igual = document.getElementById("igual");
 	var reset  = document.getElementById("reset");
-
+	operacion = ""
 	uno.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "1"
 	}
 	dos.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "2"
 	}
 	tres.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "3"
 	}
 	cuatro.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "4"
 	}
 	cinco.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "5"
 	}
 	seis.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "6"
 	}
 	siete.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "7"
 	}
 	ocho.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "8"
 	}
 	nueve.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "9"
 	}
 	cero.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "0"
 	}
 	decimal.onclick = function(e){
+		if(finalizado){
+			limpiar();
+		}
 		resultado.textContent = resultado.textContent + "."
-	}	
+	}
+
+
 	reset.onclick = function(e){
 		resetear();
 	}
+
+
 	suma.onclick = function(e){
-		variableA = resultado.textContent;
-		operacion = "+";
-		limpiar();
+		if(operacion!=""){
+		  operacion = "+";
+		} else {
+		  variableA = resultado.textContent;
+		  operacion = "+";
+		  limpiar();
+		}
+
 	}
 	resta.onclick = function(e){
-		variableA = resultado.textContent;
-		operacion = "-";
-		limpiar();
+		if(operacion!=""){
+			operacion = "-";
+		} else{
+			variableA = resultado.textContent;
+			operacion = "-";
+			limpiar();
+		}
 	}
 	divid.onclick = function(e){
-		variableA = resultado.textContent;
-		operacion = "/";
-		limpiar();
+		if(operacion!=""){
+			operacion = "/";
+		} else{
+			variableA = resultado.textContent;
+			operacion = "/";
+			limpiar();
+		}
 	}
 	multi.onclick = function(e){
-		variableA = resultado.textContent;
-		operacion = "*";
-		limpiar();
+		if(operacion!=""){
+			operacion = "*";
+		} else{
+			variableA = resultado.textContent;
+			operacion = "*";
+			limpiar();
+		}
 	}
 	igual.onclick = function(e){
 		//alert("ok");
@@ -91,6 +146,7 @@ function init(){
 function limpiar(){
 	resultado.textContent = ""
 }
+
 function resetear(){
 	resultado.textContent = ""
 	variableA = 0;
@@ -112,11 +168,16 @@ function resolver(){
       res = parseFloat(variableA) * parseFloat(variableB);
       break;
     case "/":
+      if(variableB==0){
+      	res = "Infinity"
+      	break;
+      }
       res = parseFloat(variableA) / parseFloat(variableB);
       break;
   }
   resetear();
   resultado.textContent = res;
+  finalizado = true;
 }
 
 }
