@@ -145,6 +145,7 @@ function init(){
 
 function limpiar(){
 	resultado.textContent = ""
+	finalizado = false;
 }
 
 function resetear(){
