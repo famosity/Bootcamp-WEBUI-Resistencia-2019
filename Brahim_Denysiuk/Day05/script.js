@@ -15,6 +15,7 @@ function init(){
 	var ocho = document.getElementById("ocho");
 	var nueve  = document.getElementById("nueve");
 	var cero = document.getElementById("cero");
+	var decimal = document.getElementById("decimal");
 	var suma  = document.getElementById("suma");
 	var resta = document.getElementById("resta");
 	var divid  = document.getElementById("divid");
@@ -52,6 +53,9 @@ function init(){
 	cero.onclick = function(e){
 		resultado.textContent = resultado.textContent + "0"
 	}
+	decimal.onclick = function(e){
+		resultado.textContent = resultado.textContent + "."
+	}	
 	reset.onclick = function(e){
 		resetear();
 	}
