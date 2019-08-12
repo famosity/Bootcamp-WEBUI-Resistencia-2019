@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="src/css/style.css">
+
+  </head>
+  <body onload="init()">
+    <div class="contains">
+        <span>Can be used with keyboard or Clicking the buttons.
+            History of last value is storaged and Watchable in the left panel</span>
+      <div class="calc-container">
+        <div class="display-box"><label id="display-box"></label></div>
+        <div id="history-box" class="history-box"></div>
+        <div class="grid-container">
+          <div class="grid-item dele"><button id="del">del</button></div>
+          <div class="grid-item div"><button id="divi">/</button></div>
+          <div class="grid-item mult"><button id="multi">*</button></div>
+          <div class="grid-item"><button id="7">7</button></div>
+          <div class="grid-item"><button id="8">8</button></div>
+          <div class="grid-item"><button id="9">9</button></div>
+          <div class="grid-item"><button id="4">4</button></div>
+          <div class="grid-item"><button id="5">5</button></div>
+          <div class="grid-item"><button id="6">6</button></div>
+          <div class="grid-item"><button id="1">1</button></div>
+          <div class="grid-item"><button id="2">2</button></div>
+          <div class="grid-item"><button id="3">3</button></div>
+          <div class="grid-item cer"><button id="0">0</button></div>
+          <div class="grid-item men"><button id="-">-</button></div>
+          <div class="grid-item sum"><button id="+">+</button></div>
+          <div class="grid-item intro"><button id="intro">=</button></div>
+          <div class="grid-item"><button id=".">.</button></div> 
+          <div class="grid-item clear"><button id="clear">clear</button></div> 
+          </div>
+        </div>        
+      <script src="./src/engine.js"></script>
+      <footer>Francisco N Bogarin Coding For Bootcamp</footer>
+    </div>
+    
+  </body>
+            
+            
+</html>
